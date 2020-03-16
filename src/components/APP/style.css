@@ -1,0 +1,15 @@
+body,html{
+    width:100%;
+    background-color:#fff;
+}
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.App{
+    width:1170px;
+    background-color:#1E252D;
+    margin: 0px auto;
+  
+}

@@ -1,0 +1,30 @@
+.warranty__header{
+    height:130px;
+    padding:25px 0px;
+    background-color: #f8b601;
+}
+.warranty__header__content{
+    height:80px;
+    background-color: #1e252d;
+    padding-top: 18px;
+
+}
+.company__logo{
+    margin-left:25px;
+    float: left;
+    width: 78px;
+}
+.split__line{
+    margin: 0px 59px;
+    float: left;
+    border-right: solid #ACC0D8 1px;
+    height:40px;
+    border-color: #ffffff;
+
+}
+.company__name{
+    font-size:40px;
+    font-weight:700;
+    color:#fff;
+
+}
