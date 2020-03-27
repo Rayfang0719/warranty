@@ -1,0 +1,17 @@
+.warranty__invoice{
+    padding-top:65px;
+}
+.warranty__invoice p{
+    font-size: 18px;
+    padding-bottom:38px;
+    text-align:left;
+}
+#invoice{
+    border:none;
+    border-bottom:1px solid #333;
+    background-color:#eceaeb;
+    height:30px;
+    padding-left:10px;
+    width:90%;
+    font-size:20px;
+}

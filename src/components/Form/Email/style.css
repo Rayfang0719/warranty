@@ -1,0 +1,24 @@
+.warranty__email{
+    padding-top:65px;
+}
+.warranty__email p{
+    font-size: 18px;
+    padding-bottom:38px;
+    text-align:left;
+}
+.email__section{
+    position: relative;
+    width:100%;
+}
+#email{
+    border:none;
+    border-bottom:1px solid #333;
+    background-color:#eceaeb;
+    height:30px;
+    padding-left:10px;
+    width:90%;
+}
+#email::placeholder{
+    font-size:20px;
+    color:#262626;
+}

@@ -1,0 +1,37 @@
+.warranty__content{
+    margin:.133333rem .8rem;
+    background: #eceaeb;
+    padding:.746667rem 1.333333rem;
+}
+.warranty__content h2{
+    font-size:36px;
+    text-align: center;
+    padding-bottom:.293333rem;
+    color:#4a4647;
+}
+.warranty__content hr{
+    border-color:#1a1a1a;
+    border-width: 2px;
+}
+.subscribe{
+    padding-top:20px;
+}
+#subscribe{
+    float:left;
+}
+.subscribe__content h5{
+    font-size:18px;
+    margin-right:10px;
+    
+
+}
+.subscribe__content p{
+    font-size:16px;
+}
+.warranty__subscribe__button{
+    padding-top:83px;
+}
+.warranty__subscribe__button button{
+    display:block;
+    margin:0px auto;
+}

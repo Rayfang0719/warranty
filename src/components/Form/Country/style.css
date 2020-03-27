@@ -1,0 +1,30 @@
+.warranty__country{
+   
+}
+.warranty__country p{
+    font-size: 18px;
+    padding:38px 0px;
+    text-align:left;
+}
+.country__list{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.country__section{
+    flex:1;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+}
+.country__section p{
+    position: absolute;
+    bottom:-65px;
+}
+
+.country__flag{
+    width:80%;
+}

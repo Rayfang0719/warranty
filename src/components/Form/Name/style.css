@@ -1,0 +1,36 @@
+.warranty__name{
+    margin-top: 90px;
+}
+.warranty__name p{
+    font-size: 18px;
+    padding-bottom:38px;
+    text-align:left;
+}
+.warranty__name .name{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.warranty__name .name .name__section{
+width:100%;
+position: relative;
+}
+.warranty__name .name input{
+    width:80%;
+    border:none;
+    border-bottom:1px solid #333;
+    background-color:#eceaeb;
+    height:30px;
+    padding-left:10px;
+}
+.warranty__name .name input::placeholder{
+    font-size:20px;
+    color:#262626;
+}
+.star{
+    position: absolute;
+    right:80px;
+    color:#f00;
+
+}
