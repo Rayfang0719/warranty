@@ -1,19 +1,18 @@
 .warranty__marketplace{
-    padding-top:65px;
-
+    padding-top:.451389rem /* 65/144 */;
 }
 .warranty__marketplace p{
-    font-size: 18px;
-    padding-bottom:38px;
+    font-size: .125rem /* 18/144 */;
+    padding-bottom:.263889rem /* 38/144 */;
     text-align:left;
 }
 
 #market{
-   
+   display:block;
     border:1px solid #333;
     background-color:#eceaeb;
-    height:30px;
-    padding-left:10px;
+    height:.208333rem /* 30/144 */;
+    padding-left:.069444rem /* 10/144 */;
     width:90%;
-    font-size:20px;
+    font-size:.138889rem /* 20/144 */;
 }

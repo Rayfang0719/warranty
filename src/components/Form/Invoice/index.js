@@ -7,7 +7,7 @@ class Invoice extends Component {
             <div className='warranty__invoice'>
                 <p>INVOICE / ORDER NUMBER</p>
                 <input type='text' placeholder='Invoice NO.' id='invoice'/>
-                <span style={{color:'#f00'}}>*</span>
+                <span style={{color:'#f00'}} className='star'>*</span>
                 
             </div>
         );

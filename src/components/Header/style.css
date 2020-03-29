@@ -1,29 +1,30 @@
 .warranty__header{
-    height:130px;
-    padding:25px 0px;
+    height:.902778rem /* 130/144 */;
+    padding:.173611rem /* 25/144 */ 0px;
     background-color: #f8b601;
 }
 .warranty__header__content{
-    height:80px;
+    height:.555556rem /* 80/144 */;
     background-color: #1e252d;
-    padding-top: 18px;
+    padding-top: .125rem /* 18/144 */;
 
 }
+
 .company__logo{
-    margin-left:25px;
+    margin-left:.173611rem /* 25/144 */;
     float: left;
-    width: 78px;
+    width: .541667rem /* 78/144 */;
 }
 .split__line{
-    margin: 0px 59px;
+    margin: 0px .409722rem /* 59/144 */;
     float: left;
     border-right: solid #ACC0D8 1px;
-    height:40px;
+    height:.277778rem /* 40/144 */;
     border-color: #ffffff;
 
 }
 .company__name{
-    font-size:40px;
+    font-size:.277778rem /* 40/144 */;
     font-weight:700;
     color:#fff;
 

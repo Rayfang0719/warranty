@@ -9,19 +9,81 @@ import Invoice from './Invoice'
 
 
 class Form extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            country:'',
+            firstName:'',
+            lastName:'',
+            email:'',
+            marketPlace:'',
+            invoiceNum:'',
+            subscribe:false,
+            marketPlaceList
+        };
+        this.getCountry=this.getCountry.bind(this);
+        this.getName = this.getName.bind(this);
+        this.getEmail = this.getEmail.bind(this);
+        this.getMarket = this.getMarket.bind(this);
+    
+    };
+    getCountry(val){
+        console.log('the country chosen is',val)
+        this.setState({
+            country:val
+        },()=>{
+           switch(val){
+               case 'USA':
+                    this.setState({
+                        marketPlaceList:['Amazon', 'eBay', 'Walmart', 'Jet', 'Overstocks', 'CyclingDeal USA Website', 'Shops', 'Others']
+                    })
+                    break;
+                case 'AU':
+                        this.setState({
+                            marketPlaceList:['eBay', 'Amazon', 'Catch', 'MyDeal', 'CyclingDeal AU Website', 'Shops', 'Others' ]
+                        })
+                break;
+
+                case ''
+           }
+        });
+        
+
+    };
+    getName(firstName,lastName){
+      
+        this.setState({
+            name:{firstName,lastName}
+        },()=>{
+            console.log(this.state.name)
+        });
+        
+    };
+   getEmail(val){
+        this.setState({
+            email:val
+        });
+    };
+  getMarket(val){
+        this.setState({
+            marketPlace:val
+        })
+    };
+        
+
     render() {
         return (
             <div>
-                <img src={warrantyBG}/>
+                <img src={warrantyBG} className='banner'/>
                 <div className='warranty__content'>
                     <h2>WARRANTY FORM</h2>
                     
                     <hr/>
                    
-                  <Country/>
-                  <Name/>
-                  <Email/>
-                  <Marketplace/>
+                  <Country getCountry ={this.getCountry}/>
+                  <Name getName={this.getName}/>
+                  <Email getEmail={this.getEmail}/>
+                  <Marketplace getMarket={this.getMarket}/>
                   <Invoice />
                   {/* subscription */}
                   <div className='subscribe'>

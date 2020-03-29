@@ -8,7 +8,7 @@ body,html{
     box-sizing: border-box;
 }
 .App{
-    width:1170px;
+    width:8.125rem /* 1170/144 */;
     background-color:#1E252D;
     margin: 0px auto;
   
