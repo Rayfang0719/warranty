@@ -3,6 +3,7 @@ import './style.css';
 class Marketplace extends Component {
     constructor(props){
         super(props);
+        console.log('marketplacelist',props.marketPlaceList);
         this.getSaleChanle = this.getSaleChanle.bind(this);
      
     }
@@ -16,6 +17,7 @@ class Marketplace extends Component {
                 
                <select id='market' onChange={this.getSaleChanle}>
                    {
+                    //    console.log(this.props.marketPlaceList);
                        this.props.marketPlaceList.map((item,num)=>{
                            return <option key={num}>{item}</option>
                        })

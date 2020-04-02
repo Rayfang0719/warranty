@@ -9,7 +9,7 @@ import JP from '../../../assets/jp.png'
 class Country extends Component {
     constructor(props){
         super(props);
-       
+       this.handleChange=this.handleChange.bind(this);
         
     }
     handleChange(event){
@@ -22,28 +22,28 @@ class Country extends Component {
             <p>COUNTRY</p>
             <div className="country__list">
             <label className='country__section'>
-            <input type="radio"  name="country" value="USA"  onChange={this.handleChange.bind(this)}/>
-            <img src={USA} className='country__flag'/>
+            <input type="radio"  name="country" value="USA"  onChange={this.handleChange}/>
+            <img src={USA} className='country__flag' alt='USA flag'/>
             <p>USA</p>
             </label>
             <label className='country__section'>
-            <input type="radio"  name="country" value="AU" onChange={this.handleChange.bind(this)}/>
-            <img src={AU} className='country__flag'/>
+            <input type="radio"  name="country" value="AU" onChange={this.handleChange}/>
+            <img src={AU} className='country__flag' alt='AU flag'/>
             <p>AUSTRALIA</p>
             </label>
             <label className='country__section'>
             <input type="radio"  name="country" value="CA"  onChange={this.handleChange.bind(this)}/>
-            <img src={CA} className='country__flag'/>
+            <img src={CA} className='country__flag' alt='CA flag'/>
             <p>CANADA</p>
             </label>
             <label className='country__section'>
             <input type="radio"  name="country" value="UK" onChange={this.handleChange.bind(this)}/>
-            <img src={UK} className='country__flag'/>
+            <img src={UK} className='country__flag' alt='UK flag'/>
             <p>UK</p>
             </label>
             <label className='country__section'> 
             <input type="radio"  name="country" value="JP"  onChange={this.handleChange.bind(this)}/>
-            <img src={JP} className='country__flag'/>
+            <img src={JP} className='country__flag' alt='JP flag'/>
             <p>JAPAN</p>
             </label>
             <label className='country__section'> 

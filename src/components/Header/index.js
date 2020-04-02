@@ -11,7 +11,7 @@ class Header extends Component {
             <div className="warranty__header">
                 <div className="warranty__header__content">
                 
-                    <img className='company__logo' src={logo}/>
+                    <img className='company__logo' src={logo} alt='cyclingdeal logo'/>
                     <span className='split__line'>
 
                     </span>

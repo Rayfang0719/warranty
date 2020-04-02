@@ -16,6 +16,7 @@ class Marketplace extends Component {
                 
                <select id='market' onChange={this.getSaleChanle}>
                    {
+                    //    console.log(this.props.marketPlaceList);
                        this.props.marketPlaceList.map((item,num)=>{
                            return <option key={num}>{item}</option>
                        })

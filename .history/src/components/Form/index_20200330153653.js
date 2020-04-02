@@ -31,12 +31,15 @@ class Form extends Component {
     };
     handleSubmit(e){
         e.preventDefault();
+        console.log(this.state);
         var params = this.state;
         this.props.formSubmit();
         axios.get('http://localhost:5858/warranty',{params}).then(res=>{
+            console.log(res)
         })
     }
     getCountry(val){
+        console.log('the country chosen is',val)
         this.setState({
             country:val
         },()=>{
@@ -89,6 +92,7 @@ class Form extends Component {
         this.setState({
             name:{firstName:first,lastName:last}
         },()=>{
+            console.log(this.state.name)
         });
         
     };
@@ -106,9 +110,11 @@ class Form extends Component {
         this.setState({
             invoiceNum:val
         },()=>{
+            console.log(this.state.invoiceNum)
         })
     };
     subscribe(e){
+        console.log(e.target.checked);
         this.setState({
             subscribe:e.target.checked
         })

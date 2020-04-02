@@ -8,8 +8,7 @@ class Email extends Component {
     getEmailAddress(e){
         var email = e.target.value;
         var reg = /^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/;
-        // if(reg.test(email))
-        console.log("reg",reg.test(email));
+       
         if(!reg.test(email)){
             document.querySelector('.email--warning').style.display = 'block';
         }else{
