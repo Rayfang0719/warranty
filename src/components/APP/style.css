@@ -21,3 +21,6 @@ body,html{
     padding-bottom:0px;
   
 }
+input{
+    font-size:0.15rem;
+}
