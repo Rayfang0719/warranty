@@ -18,10 +18,6 @@ class App extends React.Component {
     this.setState({
       show:false
     })
-    window.scrollTo({ 
-      top: 0, 
-      behavior: "smooth" 
-  });
   }
   render(){
   return (
