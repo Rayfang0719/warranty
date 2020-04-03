@@ -34,7 +34,7 @@ class Form extends Component {
         console.log(this.state);
         var params = this.state;
         this.props.formSubmit();
-        axios.get('http://localhost:5858/warranty',{params}).then(res=>{
+        axios.get('http://52.65.214.175:5858/warranty',{params}).then(res=>{
             console.log(res)
         })
     }
