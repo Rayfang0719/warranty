@@ -15,6 +15,10 @@ class App extends React.Component {
   }
 
   formSubmit(){
+      window.scrollTo({ 
+      top: 0, 
+      behavior: "smooth" 
+  });
     this.setState({
       show:false
     })
