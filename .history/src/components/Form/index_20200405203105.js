@@ -32,10 +32,10 @@ class Form extends Component {
     handleSubmit(e) {
         e.preventDefault();
         var params = this.state;
-        // let { country, name, email, marketPlace, invoiceNum} ={params};
-        // if(!country){
-
-        // }
+        let { country, name, email, marketPlace, invoiceNum} ={params};
+        if(!country){
+            
+        }
         this.props.formSubmit();
         axios.get('http://52.65.214.175:5858/warranty', { params }).then(res => {
             console.log(res)
