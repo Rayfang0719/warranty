@@ -2,7 +2,7 @@
    position: relative;
 }
 .warranty__country p{
-    font-size: .125rem /* 18/144 */;
+    font-size: .12rem /* 18/144 */;
     padding:.263889rem /* 38/144 */ 0px;
     text-align:left;
 }
@@ -24,7 +24,6 @@
     position: absolute;
     bottom:-.451389rem /* -65/144 */;
     font-weight:450;
-    text-align:center;
 }
 .country__section input{
     width:.138889rem /* 20/144 */;
