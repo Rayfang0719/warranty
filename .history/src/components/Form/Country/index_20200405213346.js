@@ -11,7 +11,7 @@ class Country extends Component {
         super(props);
         console.log(props)
        this.handleChange=this.handleChange.bind(this);
-    //    this.state = {countryWarn:this.props.countryWarn}
+       this.state = {countryWarn:this.props.countryWarn}
         
     }
     handleChange(event){
@@ -54,9 +54,8 @@ class Country extends Component {
             </label>
 
             </div>
-        {this.props.countryWarn && <span className='warning'>Please Choose Your Country</span>}
-        {/* <span className='warning'>Please Choose Your Country</span> */}
-       </div>
+        {this.state.countryWarn && <span className='warning'>Please Choose Your Country</span>}
+        </div>
         );
     }
 }

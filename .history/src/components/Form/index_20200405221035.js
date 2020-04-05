@@ -50,34 +50,27 @@ class Form extends Component {
              
             if(!name.firstName){
                 this.setState({firstNameWarn:true})
-              
             }
                
               
-            if(!name.lastName){
+            if(name.lastName){
                 this.setState({lastNameWarn:true})
-              
 
             }
                   
             if(!email){
                 this.setState({emailWarn:true})
-             
             }
-                   
-            if(!invoiceNum){
-                this.setState({invoiceNumWarn:true})
-               
-            }
-                    
-           if(country&&name&&email&&marketPlace&&invoiceNum){
-            this.props.formSubmit();
-            axios.get('http://localhost:5858/warranty', { params }).then(res => {
-             console.log(res)
-})
-           }
-            
-     
+                    break;
+            case !invoiceNum:
+                    this.setState({invoiceNumWarn:true})
+                    break;
+            default:
+                    this.props.formSubmit();
+                    axios.get('http://localhost:5858/warranty', { params }).then(res => {
+                     console.log(res)
+        })
+       }
        
     }
     getCountry(val) {

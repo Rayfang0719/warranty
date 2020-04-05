@@ -4,22 +4,15 @@ class Email extends Component {
     constructor(props){
         super(props);
         this.getEmailAddress = this.getEmailAddress.bind(this)
-        this.state ={
-            emailFormat:false
-        }
     }
     getEmailAddress(e){
         var email = e.target.value;
         var reg = /^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/;
        
         if(!reg.test(email)){
-            this.setState({
-                emailFormat:true
-            })
+            document.querySelector('.email--warning').style.display = 'block';
         }else{
-            this.setState({
-                emailFormat:false
-            })
+            document.querySelector('.email--warning').style.display = 'none';
             this.props.getEmail(email)
         }
     }
@@ -31,9 +24,7 @@ class Email extends Component {
                     <input type="email" name="email" id='email' placeholder='Email Address' onBlur={this.getEmailAddress}/>
                     <span className='star'>*</span>
                 </div>
-                {this.props.emailWarn && <span className="warning">Please Enter Your Email Address</span>}
-
-                {this.state.emailFormat && <span className="warning">Please Enter A Valid Email Address</span>}
+                <span className="warning">Please enter a valid email adress</span>
             </div>
         );
     }

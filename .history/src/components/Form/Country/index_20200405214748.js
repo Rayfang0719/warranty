@@ -55,8 +55,7 @@ class Country extends Component {
 
             </div>
         {this.props.countryWarn && <span className='warning'>Please Choose Your Country</span>}
-        {/* <span className='warning'>Please Choose Your Country</span> */}
-       </div>
+        </div>
         );
     }
 }

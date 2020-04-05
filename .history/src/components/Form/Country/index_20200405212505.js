@@ -9,9 +9,7 @@ import JP from '../../../assets/jp.png'
 class Country extends Component {
     constructor(props){
         super(props);
-        console.log(props)
        this.handleChange=this.handleChange.bind(this);
-    //    this.state = {countryWarn:this.props.countryWarn}
         
     }
     handleChange(event){
@@ -55,8 +53,7 @@ class Country extends Component {
 
             </div>
         {this.props.countryWarn && <span className='warning'>Please Choose Your Country</span>}
-        {/* <span className='warning'>Please Choose Your Country</span> */}
-       </div>
+        </div>
         );
     }
 }

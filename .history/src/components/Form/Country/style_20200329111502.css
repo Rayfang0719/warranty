@@ -1,5 +1,5 @@
 .warranty__country{
-   position: relative;
+   
 }
 .warranty__country p{
     font-size: .125rem /* 18/144 */;
@@ -33,8 +33,4 @@
 }
 .country__flag{
     width:80%;
-}
-.warranty__country .warning{
-    bottom:-0.3rem;
-    
 }

@@ -36,13 +36,10 @@ class Name extends Component {
                     <div className="name__section">
                     <input type="text" name="first name" id="firstName" placeholder='First Name' onBlur={this.getFirst.bind(this)} />
                     <span className='star'>*</span>
-                    {this.props.firstNameWarn && <span className='warning'>Please Enter Your First Name</span>}
                     </div>
                     <div className="name__section">
                     <input type="text" name="last name" id="lastName" placeholder='Last Name' onBlur={this.getLast.bind(this)}/>
                     <span className='star'>*</span>
-                    {this.props.lastNameWarn && <span className='warning'>Please Enter Your Last Name</span>}
-
                     </div>
                 </div>
             </div>

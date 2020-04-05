@@ -4,7 +4,7 @@ class Email extends Component {
     constructor(props){
         super(props);
         this.getEmailAddress = this.getEmailAddress.bind(this)
-        this.state ={
+        state ={
             emailFormat:false
         }
     }
@@ -31,9 +31,7 @@ class Email extends Component {
                     <input type="email" name="email" id='email' placeholder='Email Address' onBlur={this.getEmailAddress}/>
                     <span className='star'>*</span>
                 </div>
-                {this.props.emailWarn && <span className="warning">Please Enter Your Email Address</span>}
-
-                {this.state.emailFormat && <span className="warning">Please Enter A Valid Email Address</span>}
+                {this.state.emailFormat && <span className="warning">Please enter a valid email adress</span>}
             </div>
         );
     }

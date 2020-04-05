@@ -54,7 +54,7 @@ class Form extends Component {
             }
                
               
-            if(!name.lastName){
+            if(name.lastName){
                 this.setState({lastNameWarn:true})
               
 
@@ -65,7 +65,7 @@ class Form extends Component {
              
             }
                    
-            if(!invoiceNum){
+            if(invoiceNum){
                 this.setState({invoiceNumWarn:true})
                
             }

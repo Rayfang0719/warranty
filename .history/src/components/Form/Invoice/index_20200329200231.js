@@ -17,7 +17,6 @@ class Invoice extends Component {
                 <p>INVOICE / ORDER NUMBER</p>
                 <input type='text' placeholder='Invoice NO.' id='invoice' onBlur={this.getInvoiceNum}/>
                 <span style={{color:'#f00'}} className='star'>*</span>
-                {this.props.invoiceNumWarn && <span className="warning">Please Enter Your Invoice Number</span>}
                 
             </div>
         );

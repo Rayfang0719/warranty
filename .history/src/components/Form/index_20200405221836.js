@@ -65,7 +65,7 @@ class Form extends Component {
              
             }
                    
-            if(!invoiceNum){
+            if(invoiceNum){
                 this.setState({invoiceNumWarn:true})
                
             }

@@ -27,8 +27,8 @@ justify-content: space-between;
     font-size:.138889rem /* 20/144 */;
     color:#262626;
 }
-.warning{
-    /* display:none; */
+.email--warning{
+    display:none;
     color:#f00;
     font-size:.097222rem /* 14/144 */;
     position: absolute;

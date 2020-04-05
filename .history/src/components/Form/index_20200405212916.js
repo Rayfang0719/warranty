@@ -20,8 +20,7 @@ class Form extends Component {
             subscribe: false,
             marketPlaceList: [],
             countryWarn:false,
-            firstNameWarn:false,
-            lastNameWarn:false,
+            nameWarn:false,
             emailWarn:false,
             invoiceNumWarn:false
         };
@@ -39,45 +38,26 @@ class Form extends Component {
         var { country, name, email, marketPlace, invoiceNum} = this.state;
         let params = { country, name, email, marketPlace, invoiceNum} ;
         console.log(params)
-       
-           if(!country){
-            this.setState({
-                countryWarn:true
-            });
-           }
-             
-               
-             
-            if(!name.firstName){
-                this.setState({firstNameWarn:true})
-              
-            }
-               
-              
-            if(!name.lastName){
-                this.setState({lastNameWarn:true})
-              
-
-            }
-                  
-            if(!email){
-                this.setState({emailWarn:true})
-             
-            }
-                   
-            if(!invoiceNum){
-                this.setState({invoiceNumWarn:true})
-               
-            }
-                    
-           if(country&&name&&email&&marketPlace&&invoiceNum){
-            this.props.formSubmit();
-            axios.get('http://localhost:5858/warranty', { params }).then(res => {
-             console.log(res)
-})
-           }
-            
-     
+       switch(true){
+           case !country:
+               this.setState({countryWarn:true});
+               console.log(this.state.countryWarn)
+               break;
+            case !name:
+               this.setState({nameWarn:true})
+               break;
+            case !email:
+                    this.setState({emailWarn:true})
+                    break;
+            case !invoiceNum:
+                    this.setState({invoiceNumWarn:true})
+                    break;
+            default:
+                    this.props.formSubmit();
+                    axios.get('http://localhost:5858/warranty', { params }).then(res => {
+                     console.log(res)
+        })
+       }
        
     }
     getCountry(val) {
@@ -169,7 +149,7 @@ class Form extends Component {
                     <hr />
 
                     <Country getCountry={this.getCountry} countryWarn={this.state.countryWarn} />
-                    <Name getName={this.getName}  firstNameWarn = {this.state.firstNameWarn} lastNameWarn ={this.state.lastNameWarn}/>
+                    <Name getName={this.getName}  nameWarn = {this.state.nameWarn}/>
                     <Email getEmail={this.getEmail} emailWarn = {this.state.emailWarn}/>
                     <Marketplace getMarket={this.getMarket} marketPlaceList={this.state.marketPlaceList} />
                     <Invoice getInvocie={this.getInvocie} invoiceNumWarn = {this.state.invoiceNumWarn}/>

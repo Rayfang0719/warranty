@@ -44,39 +44,38 @@ class Form extends Component {
             this.setState({
                 countryWarn:true
             });
+            return;
            }
              
                
              
             if(!name.firstName){
                 this.setState({firstNameWarn:true})
-              
+                return;
             }
                
               
-            if(!name.lastName){
+            if(name.lastName){
                 this.setState({lastNameWarn:true})
-              
+                return;
 
             }
                   
             if(!email){
                 this.setState({emailWarn:true})
-             
+                return;
             }
                    
             if(!invoiceNum){
                 this.setState({invoiceNumWarn:true})
-               
+                return;
             }
                     
-           if(country&&name&&email&&marketPlace&&invoiceNum){
-            this.props.formSubmit();
-            axios.get('http://localhost:5858/warranty', { params }).then(res => {
-             console.log(res)
-})
-           }
-            
+           
+                    this.props.formSubmit();
+                    axios.get('http://localhost:5858/warranty', { params }).then(res => {
+                     console.log(res)
+        })
      
        
     }
