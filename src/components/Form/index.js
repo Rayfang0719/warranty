@@ -36,8 +36,8 @@ class Form extends Component {
     };
     handleSubmit(e) {
         e.preventDefault();
-        var { country, name, email, marketPlace, invoiceNum} = this.state;
-        let params = { country, name, email, marketPlace, invoiceNum} ;
+        var { country, name, email, marketPlace, invoiceNum,subscribe} = this.state;
+        let params = { country, name, email, marketPlace, invoiceNum,subscribe} ;
         console.log(params)
        
            if(!country){
