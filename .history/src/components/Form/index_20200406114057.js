@@ -155,6 +155,8 @@ class Form extends Component {
     subscribe(e) {
         this.setState({
             subscribe: e.target.checked
+        },()=>{
+            console.log("subscribe",this.state.subscribe)
         })
        
     }

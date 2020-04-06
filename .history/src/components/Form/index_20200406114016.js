@@ -36,8 +36,8 @@ class Form extends Component {
     };
     handleSubmit(e) {
         e.preventDefault();
-        var { country, name, email, marketPlace, invoiceNum,subscribe} = this.state;
-        let params = { country, name, email, marketPlace, invoiceNum,subscribe} ;
+        var { country, name, email, marketPlace, invoiceNum} = this.state;
+        let params = { country, name, email, marketPlace, invoiceNum} ;
         console.log(params)
        
            if(!country){
@@ -155,6 +155,8 @@ class Form extends Component {
     subscribe(e) {
         this.setState({
             subscribe: e.target.checked
+        },()=>{
+            console.log("subscribe",this.state.subscribe)
         })
        
     }
