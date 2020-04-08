@@ -5,11 +5,9 @@
     height:3rem;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top:-1rem;
-    overflow-y:hidden;
 }.warranty__content{
     margin:.133333rem .8rem;
-    margin-top: 0px;
+    margin-top: -0.5rem;
     background: #eceaeb;
     padding:.746667rem 0.333333rem;
     padding-top: 0.3rem;;

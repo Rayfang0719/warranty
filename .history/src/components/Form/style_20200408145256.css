@@ -2,11 +2,11 @@
   background-image: url('../../assets/warranty_bg.png');
     box-sizing: border-box;
     width:100%;
-    height:3rem;
+    height:3.5rem;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top:-1rem;
-    overflow-y:hidden;
+    z-index: -1;
 }.warranty__content{
     margin:.133333rem .8rem;
     margin-top: 0px;
