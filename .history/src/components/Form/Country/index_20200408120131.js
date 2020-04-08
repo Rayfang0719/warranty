@@ -17,18 +17,13 @@ class Country extends Component {
     handleChange(event){
         let item = event.target.value;
         this.props.getCountry(item);
-        for (let i = 0; i<document.querySelectorAll(".country__section").length;i++){
-            document.querySelectorAll(".country__section")[i].classList.remove("border--yellow")
-        }
-  
-        event.target.parentElement.classList.add("border--yellow");
     }
     render() {
         return ( 
             <div className="warranty__country">
             <p>COUNTRY</p>
             <div className="country__list">
-            <label className='country__section '>
+            <label className='country__section border--yellow'>
             <input type="radio"  name="country" value="USA"  onChange={this.handleChange}/>
             <img src={USA} className='country__flag' alt='USA flag'/>
             <p>USA</p>

@@ -157,7 +157,6 @@ class Form extends Component {
     getInvocie(val) {
         this.setState({
             invoiceNum: val
-            ,invoiceNumWarn:false
         }, () => {
         })
     };

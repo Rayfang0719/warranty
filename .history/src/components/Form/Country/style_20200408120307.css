@@ -21,8 +21,7 @@
 
 }
 .border--yellow{
-    border: 2px solid #ff0601;
-    padding:0.05rem 0;
+    border: 1px solid #f8b601;
 }
 .country__section p{
     position: absolute;

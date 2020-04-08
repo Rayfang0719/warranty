@@ -127,16 +127,11 @@ class Form extends Component {
 
             }
         });
-        this.setState({
-            countryWarn:false,
-        })
+
 
     };
     getName(first, last) {
-        this.setState({
-            firstNameWarn:false,
-            lastNameWarn:false
-        })
+
         this.setState({
             name: { firstName: first, lastName: last }
         }, () => {
@@ -145,8 +140,7 @@ class Form extends Component {
     };
     getEmail(val) {
         this.setState({
-            email: val,
-            emailWarn:false
+            email: val
         });
     };
     getMarket(val) {
@@ -157,7 +151,6 @@ class Form extends Component {
     getInvocie(val) {
         this.setState({
             invoiceNum: val
-            ,invoiceNumWarn:false
         }, () => {
         })
     };
@@ -172,17 +165,15 @@ class Form extends Component {
     render() {
         return (
             <div>
-                <div className='banner'></div>
-                 {/* <img src={warrantyBG} className='banner' alt='banner' /> */}
+                <img src={warrantyBG} className='banner' alt='banner' />
                 <form className='warranty__content' onSubmit={this.handleSubmit}>
-                   
-                
                     <h2>WARRANTY FORM</h2>
+
                     <hr />
 
                     <Country getCountry={this.getCountry} countryWarn={this.state.countryWarn} />
                     <Name getName={this.getName}  firstNameWarn = {this.state.firstNameWarn} lastNameWarn ={this.state.lastNameWarn}/>
-                    <Email getEmail={this.getEmail} emailWarn = {this.state.emailWarn} emailFormat ={this.state.emailFormat}/>
+                    <Email getEmail={this.getEmail} emailWarn = {this.state.emailWarn}/>
                     <Marketplace getMarket={this.getMarket} marketPlaceList={this.state.marketPlaceList} />
                     <Invoice getInvocie={this.getInvocie} invoiceNumWarn = {this.state.invoiceNumWarn}/>
                     {/* subscription */}

@@ -4,15 +4,9 @@ class Email extends Component {
     constructor(props){
         super(props);
         this.getEmailAddress = this.getEmailAddress.bind(this)
-        this.clearEmailFormat = this.clearEmailFormat.bind(this)
         this.state ={
             emailFormat:this.props.emailFormat
         }
-    }
-    clearEmailFormat(){
-        this.setState({
-            emailFormat:false
-        })
     }
     getEmailAddress(e){
         var email = e.target.value;
@@ -21,6 +15,10 @@ class Email extends Component {
         if(!reg.test(email)){
             this.setState({
                 emailFormat:true
+            })
+        }else if(this.props.emailWarn){
+            this.setState({
+                emailFormat:false
             })
         }
         else{
@@ -35,7 +33,7 @@ class Email extends Component {
             <div className='warranty__email'>
                 <p>EMAIL</p>
                 <div className='email__section'>
-                    <input type="email" name="email" id='email' placeholder='Email Address' onBlur={this.getEmailAddress} onFocus={this.clearEmailFormat}/>
+                    <input type="email" name="email" id='email' placeholder='Email Address' onBlur={this.getEmailAddress}/>
                     <span className='star'>*</span>
                 </div>
                 {this.props.emailWarn && <span className="warning">Please Enter Your Email Address</span>}

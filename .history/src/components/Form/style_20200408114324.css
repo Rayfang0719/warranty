@@ -7,10 +7,9 @@
     background-repeat: no-repeat;
 }.warranty__content{
     margin:.133333rem .8rem;
-    margin-top: 0px;
     background: #eceaeb;
     padding:.746667rem 0.333333rem;
-    padding-top: 0.3rem;;
+    padding-top:0;
    
 }
 .warranty__content h2{

@@ -17,11 +17,6 @@ class Country extends Component {
     handleChange(event){
         let item = event.target.value;
         this.props.getCountry(item);
-        for (let i = 0; i<document.querySelectorAll(".country__section").length;i++){
-            document.querySelectorAll(".country__section")[i].classList.remove("border--yellow")
-        }
-  
-        event.target.parentElement.classList.add("border--yellow");
     }
     render() {
         return ( 

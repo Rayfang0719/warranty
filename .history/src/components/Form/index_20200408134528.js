@@ -145,8 +145,7 @@ class Form extends Component {
     };
     getEmail(val) {
         this.setState({
-            email: val,
-            emailWarn:false
+            email: val
         });
     };
     getMarket(val) {
@@ -157,7 +156,6 @@ class Form extends Component {
     getInvocie(val) {
         this.setState({
             invoiceNum: val
-            ,invoiceNumWarn:false
         }, () => {
         })
     };
