@@ -4,7 +4,7 @@ import './style.css';
 import Header from '../Header';
 import Form from '../Form';
 import Thank from '../Thank'
-
+import MediaQuery from 'react-responsive'
 class App extends React.Component {
   constructor(props){
     super();
@@ -29,6 +29,7 @@ class App extends React.Component {
   }
   render(){
   return (
+    // <MediaQuery minDeviceWidth={1224}>
     <div className="App">
       <Header/>
 
@@ -37,6 +38,7 @@ class App extends React.Component {
       
      
     </div>
+    // </MediaQuery>
   );
 }
 }

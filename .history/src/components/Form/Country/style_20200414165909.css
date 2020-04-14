@@ -2,7 +2,7 @@
    position: relative;
 }
 .warranty__country p{
-    font-size: .20rem /* 18/144 */;
+    font-size: .225rem /* 18/144 */;
     padding:.263889rem /* 38/144 */ 0px;
     text-align:left;
 }

@@ -16,6 +16,7 @@
     "postcss-pxtorem": "^5.1.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-responsive": "^8.0.3",
     "react-scripts": "3.4.0",
     "sass-loader": "^8.0.2"
   },
